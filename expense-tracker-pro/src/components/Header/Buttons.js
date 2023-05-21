@@ -17,7 +17,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     padding: 0,
     transform: "translateX(6px)",
     "&.Mui-checked": {
-      color: "#fff",
+      color: "red",
       transform: "translateX(22px)",
       "& .MuiSwitch-thumb:before": {
         backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
@@ -76,7 +76,13 @@ const Buttons = () => {
   return (
     <Stack direction="row">
       {!isAuthenticated && (
-        <Button variant="outlined" color="inherit" size="small" component={Link} to="/auth">
+        <Button
+          variant="outlined"
+          color="inherit"
+          size="small"
+          component={Link}
+          to="/auth"
+        >
           Signup
         </Button>
       )}
@@ -92,7 +98,12 @@ const Buttons = () => {
         </Button>
       )}
       {isAuthenticated && (
-        <Button variant="outlined" color="inherit" size="small" onClick={verifyMailHandler}>
+        <Button
+          variant="outlined"
+          color="inherit"
+          size="small"
+          onClick={verifyMailHandler}
+        >
           verify email
         </Button>
       )}

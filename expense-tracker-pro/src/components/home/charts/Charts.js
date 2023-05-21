@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import BarChart from "./BarChart";
+import BarChart from "./BarChat";
 import DoughnutChart from "./DoughnutChart";
 
 const Charts = () => {

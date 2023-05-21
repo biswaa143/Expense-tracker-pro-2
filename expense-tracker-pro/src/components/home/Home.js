@@ -13,7 +13,7 @@ const Home = () => {
   if (Object.keys(expenses).length) {
     addedExpenseData = (
       <>
-        <Charts />
+      <Charts />
         <AddedExpenses />
       </>
     );
